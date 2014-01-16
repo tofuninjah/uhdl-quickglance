@@ -15,8 +15,16 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/weblogs_225x46" 
+        android:src="@drawable/weblogs_original" 
         android:contentDescription="@string/weblogs"
      />
+
+    <ImageView
+        android:id="@+id/uhdl_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/uh_libraries_white" />
 
 </RelativeLayout>

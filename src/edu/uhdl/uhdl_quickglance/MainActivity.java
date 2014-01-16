@@ -1,6 +1,8 @@
 package edu.uhdl.uhdl_quickglance;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -31,10 +33,12 @@ public class MainActivity extends Activity {
 	public void addListenerOnButton() {
 		weblogsButton = (ImageButton) findViewById(R.id.img_button_weblogs);
 		weblogsButton.setOnClickListener(new OnClickListener() {
- 
 			@Override
 			public void onClick(View arg0) {
-			   Toast.makeText(MainActivity.this, "Weblogs Button is clicked!", Toast.LENGTH_SHORT).show(); 
+			    Toast.makeText(MainActivity.this, "Weblogs Button is clicked!", Toast.LENGTH_SHORT).show();
+			    Intent intent = new Intent(MainActivity.this, WeblogViewActivity.class);
+				
+				startActivity(intent);
 			}
 		});
 	}
