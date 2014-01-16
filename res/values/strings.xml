@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">uhdl-quickglance</string>
+    <string name="app_name">UH Libraries Quickglance</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="weblogs">weblogs</string>
 
 </resources>
