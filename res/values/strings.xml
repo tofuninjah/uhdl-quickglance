@@ -5,5 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="weblogs">weblogs</string>
+    <string name="uhdl_logo_description">University of Houston Libraries</string>
 
 </resources>

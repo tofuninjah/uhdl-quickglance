@@ -25,6 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/uh_libraries_white" />
+        android:src="@drawable/uh_libraries_white"
+        android:contentDescription="@string/uhdl_logo_description"
+     />
 
 </RelativeLayout>
