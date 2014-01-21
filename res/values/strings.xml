@@ -6,5 +6,9 @@
     <string name="hello_world">Hello world!</string>
     <string name="weblogs">weblogs</string>
     <string name="uhdl_logo_description">University of Houston Libraries</string>
+    <string name="error_title">Oops! Sorry!</string>
+    <string name="error_message">There was an error getting data from the blog.</string>
+    <string name="no_items">There are no items to display.</string>
+    
 
 </resources>
