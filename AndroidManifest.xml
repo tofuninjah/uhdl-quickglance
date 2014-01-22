@@ -35,7 +35,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="edu.uhdl.uhdl_quickglance.WeblogWebViewActivity" android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_name"></activity>
+        <activity
+            android:name="edu.uhdl.uhdl_quickglance.WeblogWebViewActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
     </application>
 
 </manifest>
