@@ -9,24 +9,60 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <ImageButton
-        android:id="@+id/img_button_weblogs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/weblogs_original" 
-        android:contentDescription="@string/weblogs"
-     />
-
     <ImageView
         android:id="@+id/uhdl_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/uh_libraries_white"
+        android:layout_centerHorizontal="true"
         android:contentDescription="@string/uhdl_logo_description"
-     />
+        android:src="@drawable/uh_libraries_white" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/electronic_resources_original" />
+
+    <ImageButton
+        android:id="@+id/img_button_weblogs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uhdl_logo"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/weblogs"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/weblogs_original" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_button_weblogs"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/speccol_original" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/architecture_original" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton3"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/music_original" />
 
 </RelativeLayout>
