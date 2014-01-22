@@ -70,15 +70,16 @@ public class WeblogViewActivity extends ListActivity {
 			
 			Log.i(TAG, "Get the JSON Stuff?: " + jsonPosts);
 				
-			/*
+			
 			JSONObject jsonPost = jsonPosts.getJSONObject(position);
 			String blogUrl = jsonPost.getString("url");
 			
-			Intent intent = new Intent(this, BlogWebViewActivity.class);
+			Log.i(TAG, "URL: " + blogUrl);
+			
+			
+			Intent intent = new Intent(this, WeblogWebViewActivity.class);
 			intent.setData(Uri.parse(blogUrl));
 			startActivity(intent);
-			*/
-			
 			
 		} catch (JSONException e) {
 			logException(e);
