@@ -35,7 +35,7 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class WeblogViewActivity extends ListActivity {
+public class ElectronicResourceViewActivity extends ListActivity {
 	private final String KEY_TITLE = "title";
 	private final String KEY_DATE = "date";
 	public static final String TAG = WeblogViewActivity.class.getSimpleName();
@@ -110,7 +110,7 @@ public class WeblogViewActivity extends ListActivity {
 		    JSONObject jsonResponse = null;
 		    StringBuilder builder = new StringBuilder();
 		    HttpClient client = new DefaultHttpClient();
-		    HttpGet httpget = new HttpGet("http://weblogs.lib.uh.edu/?json=1&count=10");
+		    HttpGet httpget = new HttpGet("http://weblogs.lib.uh.edu/er/?json=1&count=10");
 
 		    try {
 		        HttpResponse response = client.execute(httpget);
@@ -174,7 +174,6 @@ public class WeblogViewActivity extends ListActivity {
 						
 						blogPosts.add(blogPost);
 					}
-					
 				}
 				
 				String[] keys = { KEY_TITLE, KEY_DATE };
