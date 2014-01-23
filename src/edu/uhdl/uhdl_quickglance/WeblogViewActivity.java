@@ -77,7 +77,7 @@ public class WeblogViewActivity extends ListActivity {
 			Log.i(TAG, "URL: " + blogUrl);
 			
 			
-			Intent intent = new Intent(this, WeblogWebViewActivity.class);
+			Intent intent = new Intent(this, WebViewActivity.class);
 			intent.setData(Uri.parse(blogUrl));
 			startActivity(intent);
 			

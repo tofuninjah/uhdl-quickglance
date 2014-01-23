@@ -7,58 +7,49 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="17" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
-        
         <activity
             android:name="edu.uhdl.uhdl_quickglance.MainActivity"
-            android:label="@string/app_name" 
-            android:theme="@android:style/Theme.NoTitleBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        
-        
-        <activity
-            android:name="edu.uhdl.uhdl_quickglance.WeblogViewActivity"
-            android:label="@string/app_name" 
-            android:theme="@android:style/Theme.NoTitleBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        
-        
-        <activity
-            android:name="edu.uhdl.uhdl_quickglance.ElectronicResourceViewActivity"
-            android:label="@string/app_name" 
-            android:theme="@android:style/Theme.NoTitleBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        
-        
-        <activity
-            android:name="edu.uhdl.uhdl_quickglance.WeblogWebViewActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.uhdl.uhdl_quickglance.WebViewActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="edu.uhdl.uhdl_quickglance.WeblogViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="edu.uhdl.uhdl_quickglance.ElectronicResourceViewActivity"
+            android:label="@string/electronic_resources" >
+        </activity>
+        <activity
+            android:name="edu.uhdl.uhdl_quickglance.SpeccolViewActivity"
+            android:label="@string/title_activity_speccol" >
+        </activity>
+        <activity
+            android:name="edu.uhdl.uhdl_quickglance.ArchitectureViewActivity"
+            android:label="@string/title_activity_architecture_view" >
+        </activity>
+        <activity
+            android:name="edu.uhdl.uhdl_quickglance.MusicViewActivity"
+            android:label="@string/title_activity_music_view" >
+        </activity>
     </application>
 
 </manifest>

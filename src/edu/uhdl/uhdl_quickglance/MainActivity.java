@@ -54,8 +54,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 			    Toast.makeText(MainActivity.this, "Special Collections Button clicked!", Toast.LENGTH_SHORT).show();
-			    //Intent intent = new Intent(MainActivity.this, ElectronicResourceViewActivity.class);
-				//startActivity(intent);
+			    Intent intent = new Intent(MainActivity.this, SpeccolViewActivity.class);
+				startActivity(intent);
 			}
 		});
 		
@@ -63,8 +63,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 			    Toast.makeText(MainActivity.this, "Architecture Button clicked!", Toast.LENGTH_SHORT).show();
-			    //Intent intent = new Intent(MainActivity.this, WeblogViewActivity.class);
-				//startActivity(intent);
+			    Intent intent = new Intent(MainActivity.this, ArchitectureViewActivity.class);
+				startActivity(intent);
 			}
 		});
 		
@@ -72,8 +72,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 			    Toast.makeText(MainActivity.this, "Music Button clicked!", Toast.LENGTH_SHORT).show();
-			    //Intent intent = new Intent(MainActivity.this, WeblogViewActivity.class);
-				//startActivity(intent);
+			    Intent intent = new Intent(MainActivity.this, MusicViewActivity.class);
+				startActivity(intent);
 			}
 		});
 	}

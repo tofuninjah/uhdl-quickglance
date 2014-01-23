@@ -38,7 +38,7 @@ import android.widget.Toast;
 public class ElectronicResourceViewActivity extends ListActivity {
 	private final String KEY_TITLE = "title";
 	private final String KEY_DATE = "date";
-	public static final String TAG = WeblogViewActivity.class.getSimpleName();
+	public static final String TAG = ElectronicResourceViewActivity.class.getSimpleName();
     protected ProgressBar mProgressBar;
     protected JSONObject mWeblogsData;
     
@@ -76,8 +76,7 @@ public class ElectronicResourceViewActivity extends ListActivity {
 			
 			Log.i(TAG, "URL: " + blogUrl);
 			
-			
-			Intent intent = new Intent(this, WeblogWebViewActivity.class);
+			Intent intent = new Intent(this, WebViewActivity.class);
 			intent.setData(Uri.parse(blogUrl));
 			startActivity(intent);
 			
